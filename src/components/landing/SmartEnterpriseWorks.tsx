@@ -15,7 +15,7 @@ const industryData: Record<string, { icon: React.ReactNode; quote: string; autho
     "Software & IT": { icon: <Code2 />, quote: "The developer documentation is the best we've seen. Up and running in our Node.js environment in minutes.", author: "Lead Dev, SaaS Cloud", stat: "24/7", label: "Dev Support", tag: "Developer First", color: "#4f46e5" }
 };
 
-export default function AdvancedWorks() {
+export default function SmartEnterpriseWorks() {
     const industries = Object.keys(industryData);
     const [activeTab, setActiveTab] = useState(industries[0]);
     const [isPaused, setIsPaused] = useState(false);

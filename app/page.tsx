@@ -6,7 +6,7 @@ import Pricing from "@/src/components/landing/Pricing";
 import Footer from "@/src/components/include/Footer";
 import CTA from "@/src/components/landing/CTA";
 import UseCases from "@/src/components/landing/UseCases";
-import Works from "@/src/components/landing/Works";
+import SmartEnterpriseWorks from "@/src/components/landing/SmartEnterpriseWorks";
 import Features from "@/src/components/landing/Features";
 import OnboardingProcess from "@/src/components/landing/OnboardingProcess";
 
@@ -25,7 +25,8 @@ export default function Home() {
       {/* --- USE CASES --- */}
       <UseCases />
 
-      <Works />
+      {/* --- Smart Enterprise Workss --- */}
+      <SmartEnterpriseWorks />
 
       {/* --- Onboarding Process --- */}
       <OnboardingProcess />
