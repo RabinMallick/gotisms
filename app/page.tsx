@@ -8,7 +8,7 @@ import CTA from "@/src/components/landing/CTA";
 import UseCases from "@/src/components/landing/UseCases";
 import Works from "@/src/components/landing/Works";
 import Features from "@/src/components/landing/Features";
-import Steps from "@/src/components/landing/Steps";
+import OnboardingProcess from "@/src/components/landing/OnboardingProcess";
 
 export default function Home() {
   return (
@@ -26,7 +26,10 @@ export default function Home() {
       <UseCases />
 
       <Works />
-      <Steps />
+
+      {/* --- Onboarding Process --- */}
+      <OnboardingProcess />
+
       {/* --- CTA --- */}
       <CTA />
 
