@@ -30,7 +30,7 @@ export default function SmartEnterpriseWorks() {
 
     return (
         <section
-            className="relative bg-[#F8FAFC] py-8 md:py-16 px-3 md:px-6  overflow-hidden font-sans"
+            className="relative bg-[#F8FAFC] py-16 md:py-24 px-3 md:px-6  overflow-hidden font-sans"
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
         >
@@ -44,7 +44,7 @@ export default function SmartEnterpriseWorks() {
             <div className="max-w-7xl mx-auto relative z-10">
 
                 {/* Header Section */}
-                <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-8">
+                <div className="flex flex-col md:flex-row md:items-end justify-between gap-5   mb-8">
                     <div className=" ">
                         <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-(--from) text-white text-[10px] font-bold uppercase tracking-[0.2em] mb-6">
                             <ShieldCheck className="w-3 h-3" /> Tier-1 Infrastructure
@@ -68,7 +68,7 @@ export default function SmartEnterpriseWorks() {
           transition-all duration-300 group-hover:text-(--from) group-hover:scale-105">
                                         500 <span className="text-(--from)">+</span>
                                     </p>
-                                    <p className="mt-1 text-[10px] md:text-xs font-semibold text-slate-500 uppercase tracking-[0.2em]">
+                                    <p className="mt-1 text-[10px] md:text-xs font-semibold text-(--secondary) uppercase tracking-[0.2em]">
                                         Clients
                                     </p>
 
@@ -86,7 +86,7 @@ export default function SmartEnterpriseWorks() {
           transition-all duration-300 group-hover:text-(--to) group-hover:scale-105">
                                         99.9<span className="text-(--to)"> %</span>
                                     </p>
-                                    <p className="mt-1 text-[10px] md:text-xs font-semibold text-slate-500 uppercase tracking-[0.2em]">
+                                    <p className="mt-1 text-[10px] md:text-xs font-semibold text-(--secondary) uppercase tracking-[0.2em]">
                                         Success
                                     </p>
 
@@ -113,7 +113,7 @@ export default function SmartEnterpriseWorks() {
     transition-all duration-300 border cursor-pointer
     ${activeTab === item
                                             ? "bg-white/50 border-(--from)/15 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.1)] text-(--from) scale-105"
-                                            : "bg-transparent border-(--from)/10 text-slate-500 hover:text-slate-800"
+                                            : "bg-transparent border-(--from)/10 text-(--secondary) hover:text-slate-800"
                                         }`}
                                 >
                                     <span
@@ -147,7 +147,7 @@ export default function SmartEnterpriseWorks() {
                                 animate={{ opacity: 1, x: 0 }}
                                 exit={{ opacity: 0, x: -20 }}
                                 transition={{ duration: 0.5, ease: "circOut" }}
-                                className="h-full bg-(--primary)/2 border border-white/5 rounded-4xl md:rounded-[3rem] p-5  md:p-8 flex flex-col justify-between relative overflow-hidden group"
+                                className="h-full bg-(--primary)/2 border border-white/5 rounded-4xl md:rounded-[3rem] p-5   md:p-8 flex flex-col justify-between relative overflow-hidden group"
                             >
                                 {/* Background Decor */}
                                 <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 blur-[100px] -z-10 group-hover:bg-blue-600/20 transition-colors duration-1000" />
@@ -189,17 +189,17 @@ export default function SmartEnterpriseWorks() {
                                         </div>
                                         <div>
                                             <p className="font-bold text-(--primary) text-sm md:text-lg leading-none mb-1">{industryData[activeTab].author}</p>
-                                            <p className="text-[10px] md:text-xs text-slate-500 font-medium tracking-wide">Enterprise Customer — {activeTab}</p>
+                                            <p className="text-[10px] md:text-xs text-(--secondary) font-medium tracking-wide">Enterprise Customer — {activeTab}</p>
                                         </div>
                                     </div>
 
-                                    <div className="hidden md:flex items-center gap-2 text-slate-500 font-mono text-[10px] uppercase">
+                                    <div className="hidden md:flex items-center gap-2 text-(--secondary) font-mono text-[10px] uppercase">
                                         <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" /> Live Verified
                                     </div>
                                 </div>
 
                                 {/* Industry Icon Overlay */}
-                                <div className="absolute -bottom-12 -right-12 p-8 opacity-[0.02] group-hover:opacity-[0.05] group-hover:scale-110 transition-all duration-1000">
+                                <div className="absolute -bottom-12 -right-12 p-5 md:p-8 opacity-[0.02] group-hover:opacity-[0.05] group-hover:scale-110 transition-all duration-1000">
                                     {React.cloneElement(industryData[activeTab].icon as React.ReactElement, { size: 320 } as any)}
                                 </div>
                             </motion.div>
@@ -210,7 +210,7 @@ export default function SmartEnterpriseWorks() {
                     <div className="lg:col-span-4 flex flex-col gap-6">
 
                         {/* Stat Card */}
-                        <div className="bg-(--primary) rounded-[2.5rem] p-8 text-white relative overflow-hidden flex-1 shadow-2xl shadow-blue-900/20">
+                        <div className="bg-(--primary) rounded-[2.5rem] p-5 md:p-8 text-white relative overflow-hidden flex-1 shadow-2xl shadow-blue-900/20">
                             <div className="relative z-10">
                                 <div className="flex justify-between items-start mb-8">
                                     <div className="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-(--from)">
@@ -245,7 +245,7 @@ export default function SmartEnterpriseWorks() {
                                             className="h-full bg-(--from)"
                                         />
                                     </div>
-                                    <div className="flex justify-between text-[10px] font-mono text-slate-500 uppercase">
+                                    <div className="flex justify-between text-[10px] font-mono text-(--secondary) uppercase">
                                         <span>Processing</span>
                                         <span>Optimized</span>
                                     </div>

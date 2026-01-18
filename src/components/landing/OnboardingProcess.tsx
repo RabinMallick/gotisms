@@ -53,7 +53,7 @@ export default function OnboardingProcess() {
   const [hoveredStep, setHoveredStep] = useState<number | null>(null);
 
   return (
-    <section className="relative bg-slate-50 py-8 md:py-16 px-3 md:px-6  overflow-hidden">
+    <section className="relative bg-slate-50 py-16 md:py-24 px-3 md:px-6  overflow-hidden">
       {/* Dynamic Background Glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-full opacity-30 pointer-events-none">
         <div className="absolute top-1/4 left-0 w-72 h-72 bg-(--from) rounded-full blur-[120px]" />
@@ -65,7 +65,7 @@ export default function OnboardingProcess() {
           <div className="md:text-center mb-10 md:mb-12">
             <span className="text-[12px]  md:text-sm text-transparent bg-linear-to-r from-(--from) to-(--to) bg-clip-text font-bold tracking-widest text-shadow-2xs uppercase">Onboarding Process</span>
             <h2 className="text-xl md:text-3xl font-extrabold text-(--primary) mt-3">Ready to scale in minutes</h2>
-            <p className=" text-sm md:text-md  text-(--secondary) mt-2 md:mt-4 max-w-2xl mx-auto ">
+            <p className="text-sm md:text-base text-(--secondary) mt-2 md:mt-4 max-w-2xl mx-auto ">
               Our streamlined process ensures you can start sending SMS to your customers without technical hurdles.
             </p>
           </div>
@@ -91,7 +91,7 @@ export default function OnboardingProcess() {
                 onMouseLeave={() => setHoveredStep(null)}
                 className="relative group cursor-default"
               >
-                <div className="flex lg:flex-col items-start lg:items-center gap-6 lg:gap-8">
+                <div className="flex lg:flex-col items-start lg:items-center gap-6 lg:gap-5 md:p-8">
 
                   {/* Icon Hexagon/Box */}
                   <motion.div
@@ -114,7 +114,7 @@ export default function OnboardingProcess() {
                     <h3 className={`text-md md:text-xl font-bold mb-2 md:mb-3 transition-colors duration-300 ${hoveredStep === idx ? 'text-(--from)' : 'text-(--primary)'}`}>
                       {step.title}
                     </h3>
-                    <p className="text-slate-500 text-sm md:text-base leading-relaxed md:max-w-65 md:mx-auto">
+                    <p className="text-(--secondary) text-sm md:text-base leading-relaxed md:max-w-65 md:mx-auto">
                       {step.description}
                     </p>
                   </div>

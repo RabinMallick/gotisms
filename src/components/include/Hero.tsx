@@ -49,7 +49,7 @@ export default function Hero() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="lg:w-1/2 w-full"
           >
-            <div className="bg-slate-900/40 backdrop-blur-2xl border border-white/10 p-8 rounded-[2.5rem] shadow-2xl relative">
+            <div className="bg-slate-900/40 backdrop-blur-2xl border border-white/10 p-5 md:p-8 rounded-[2.5rem] shadow-2xl relative">
               <div className="absolute -top-10 -right-10 w-32 h-32 bg-cyan-500/20 blur-3xl rounded-full"></div>
               <div className="grid grid-cols-2 gap-6 relative z-10">
                 <div className="p-6 bg-white/5 rounded-3xl border border-white/5 group hover:border-cyan-500/30 transition-colors">
