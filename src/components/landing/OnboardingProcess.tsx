@@ -60,7 +60,7 @@ export default function OnboardingProcess() {
         <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-(--to) rounded-full blur-[120px]" />
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="md:text-center md:mb-16">
           <div className="md:text-center mb-10 md:mb-12">
             <span className="text-[12px]  md:text-sm text-transparent bg-linear-to-r from-(--from) to-(--to) bg-clip-text font-bold tracking-widest text-shadow-2xs uppercase">Onboarding Process</span>

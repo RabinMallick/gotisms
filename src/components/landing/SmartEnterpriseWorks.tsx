@@ -41,7 +41,7 @@ export default function SmartEnterpriseWorks() {
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-250 h-150 bg-blue-100/50 blur-[120px] rounded-full" />
             </div>
 
-            <div className="max-w-7xl mx-auto relative z-10">
+            <div className="max-w-6xl mx-auto relative z-10">
 
                 {/* Header Section */}
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-5   mb-8">

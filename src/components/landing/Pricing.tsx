@@ -55,13 +55,31 @@ export default function Pricing() {
         }}
       />
 
+      {/* Advanced Masked Grid Background */}
+      <div className="absolute inset-0 z-0 bg-[#ffffff1e]">
+        {/* Substrate Grid */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-size-[64px_64px]" />
+
+        {/* The "Beam" of light */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_50%_-100px,#1d4ed815,transparent)]" />
+
+        {/* Decorative SVG Shapes (Advanced Geometry) */}
+        <svg className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full opacity-20" fill="none">
+          <defs>
+            <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <circle cx="1" cy="1" r="1" fill="#444" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#dots)" />
+        </svg>
+      </div>
       {/* 2. Mesh Gradient Glows (Same as Features) */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute top-[-10%] left-[10%] w-[500px] h-[500px] bg-indigo-100/40 rounded-full blur-[120px]" />
-        <div className="absolute bottom-[-10%] right-[10%] w-[500px] h-[500px] bg-cyan-100/40 rounded-full blur-[120px]" />
+        <div className="absolute top-[-10%] left-[10%] w-125 h-125 bg-indigo-100/40 rounded-full blur-[120px]" />
+        <div className="absolute bottom-[-10%] right-[10%] w-125 h-125 bg-cyan-100/40 rounded-full blur-[120px]" />
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
 
         {/* Header Section (Same Font Sizes & Spacing) */}
         <div className="mb-12 md:mb-16">

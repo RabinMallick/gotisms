@@ -43,7 +43,7 @@ export default function LinearUseCases() {
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-cyan-100/40 blur-[120px] rounded-full" />
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Header Section */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10 mb-10 md:mb-15">
           <div className="max-w-3xl">

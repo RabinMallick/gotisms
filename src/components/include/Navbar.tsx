@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 w-full z-50 bg-[#0B1E33]/80 backdrop-blur-lg border-b border-white/10">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <nav className=" sticky top-0 w-full z-50 bg-[#0B1E33]/80 backdrop-blur-lg border-b border-white/10">
+      <div className="max-w-6xl mx-auto   h-16 flex items-center justify-between">
         <Image
           src="/gotisms-logo.png" // no need for {}
           alt="Gotisms Logo" // always add alt for accessibility
@@ -12,16 +12,7 @@ export default function Navbar() {
           height={80}
           priority={true} // optional: if you want it to load faster
         />
-
-        {/* <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-tr from-cyan-400 to-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">G</span>
-            </div>
-            <span className="text-white font-bold text-xl tracking-tight italic">
-              Gotis<span className="text-cyan-400">MS</span>
-            </span>
-          </div> */}
-
+ 
         <div className="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
           {["Features", "Use Cases", "Pricing", "Support"].map((item) => (
             <Link

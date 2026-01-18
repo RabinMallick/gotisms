@@ -34,24 +34,8 @@ export default function Features() {
   ];
 
   return (
-    <section id="features" className="py-8 md:py-16 px-3 md:px-6 bg-[#FCFCFD] relative overflow-hidden">
-
-      {/* Advanced Masked Grid Background */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 opacity-[0.03]"
-          style={{ backgroundImage: `linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)`, backgroundSize: '10px 10px' }} />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-250 h-150 bg-blue-100/50 blur-[120px] rounded-full" />
-      </div>
-
-      {/* Mesh Gradient Glows */}
-      <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute top-[-10%] right-[10%] w-w-100 h-w-100 bg-indigo-100/30 rounded-full blur-[100px]" />
-        <div className="absolute bottom-[-10%] left-[10%] w-w-100 h-w-100 bg-cyan-100/30 rounded-full blur-[100px]" />
-      </div>
-
-      <div className="max-w-7xl mx-auto relative z-10">
-
-        {/* Header Section */}
+    <section id="features" className="py-12 md:py-24 px-4 md:px-6 bg-[#FCFCFD] relative overflow-hidden">
+      <div className="max-w-6xl mx-auto relative z-10">
 
         <div className=" mb-10 md:mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 shadow-sm mb-6">
